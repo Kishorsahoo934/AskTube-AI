@@ -1,0 +1,7 @@
+streamlit>=1.20.0
+youtube-transcript-api>=0.6.2
+langchain>=0.1.0
+langchain-google-genai>=0.0.10
+langchain-community>=0.0.20 # This might be needed for FAISS if it's not bundled with core
+faiss-cpu>=1.7.4 # Or faiss-gpu if you have a GPU
+python-dotenv>=1.0.0
