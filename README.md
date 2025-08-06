@@ -21,11 +21,7 @@ Welcome to **AskTube-AI**, a powerful Streamlit web app that lets you:
 
 ---
 
-## 📸 Demo
 
-![demo gif or screenshot if you have one](link-to-demo-or-gif)
-
----
 
 ## 🧰 Tech Stack
 
