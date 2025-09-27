@@ -83,7 +83,7 @@ if st.session_state.vector_store:
                 "question": RunnablePassthrough()
             })
 
-            llm = ChatGoogleGenerativeAI(model="models/gemini-1.5-flash", temperature=0.1)
+            llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0.1)
             parser = StrOutputParser()
             main_chain = parallel_chain | prompt | llm | parser
 
