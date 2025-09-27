@@ -11,7 +11,7 @@ import os
 import re
 
 # Load API key
-load_dotenv()
+# load_dotenv()
 
 # UI
 st.title("🎥 Ask Questions About a YouTube Video")
@@ -83,7 +83,7 @@ if st.session_state.vector_store:
                 "question": RunnablePassthrough()
             })
 
-            llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0.1)
+            llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0.1,api_key="AIzaSyBz80LVIZEwFDppx8s0Ii8AEJ3CQYTEfsc")
             parser = StrOutputParser()
             main_chain = parallel_chain | prompt | llm | parser
 
